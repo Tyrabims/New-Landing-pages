@@ -10,22 +10,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div id="container">
-    <p><span class="fa fa-star checked"></span></p>
-    <h1>How did we do?</h1>
-    <h3 class="rate">Please let us know how we did with your support <br> request. All feedback is appreciated to help us <br> improve our offering!</h3>
-    <button id="btn">1</button>
-    <button id="btn">2</button>
-    <button id="btn">3</button>
-    <button id="btn">4</button>
-    <button onclick ="display('5')">5</button><br>
-    <button class="submit-btn" id="submitt">Submit</button>
-<div class="thankyou-container">
-    <h3 class="appr">You selected  out of 5</h3>
-    <h1>Thank you!</h1>
-    <h3>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
-    <button class="submit-btn" id="backBtn">Back</button>
-</div>
-</div>
+    <div class="main-container">
+        <div class="ratings-container">
+            <p><span class="fa fa-star checked"></span></p>
+            <h1>How did we do?</h1>
+            <h3 class="rate">Please let us know how we did with your support <br> request. All feedback is appreciated to help us <br> improve our offering!</h3>
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn">4</button>
+            <button class="btn">5</button><br>
+            <button class="submit-btn" id="submitt">Submit</button>
+        </div>
+        <div class="hide" >
+            <div class="thank-you-container"> 
+                <h3 class="rated">You selected <span id="rating">4</span> out of 5</h3>
+                <h1>Thank you!</h1>
+                <h3>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+                <button class="submit-btn" id="backBtn">Back</button>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="index.js"></script>
 </html>

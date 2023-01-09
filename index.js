@@ -1,22 +1,22 @@
-const firstContainer= document.getElementById("#container");
- 
-const thankYouContainer = document.querySelector(".thankyou-container")
+const firstContainer = document.querySelector(".ratings-container");
+const rateBtn = document.querySelectorAll(".btn");
+const submitButton = document.getElementById("submitt");
+const thankYouContainer = document.querySelector(".hide");
+const backButton = document.querySelector("#backBtn");
+const rating = document.getElementById("rating");
 
-const btn = document.querySelectorAll("btn");
- 
-const submitButton = document.getElementsById("#submitt");
+submitButton.addEventListener("click", () => {
+    firstContainer.style.display = "none";
+    thankYouContainer.style.display = "block";
+})
+backButton.addEventListener("click", () => {
+    firstContainer.style.display = "block";
+    thankYouContainer.style.display = "none";
+})
 
-const backButton = document.getElementsById("#backBtn");
-// function btnSelected() {
- 
-// }
-
-//select number 
-// then click on submit button
-//element.addEventListener("click", function)
-
-
-// submitButton.addEventListener("click", () => {
-//   thankYouContainer.classList.remove(".thankyou-container")
-// }) 
+rateBtn.forEach((rate) => {
+    rate.addEventListener("click",() => {
+        rating.innerHTML = rate.innerHTML
+    })
+})
 
